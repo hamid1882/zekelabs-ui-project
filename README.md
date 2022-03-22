@@ -1,3 +1,29 @@
+These are the pages:
+1. Homepage
+2. Modules Page
+3. Instructor Page
+
+
+These are the functionalities:
+Homepage:
+1. Open and Close the Homepage Dropdown
+2. When clicked on the Homepage Dropdown options, highlight the selected code and show it on Blue Bar which Says Data Scientist Program
+3. Rest of the data is static on Homepage
+
+Module Page:
+1. There are 3 types: Topic, Quiz, Assignment. Use the different symbols to show each active item on left vertical bar
+2. When clicked on Topic show the right side content like shown in Module - Topic Screenshot
+3. When clicked on Quiz show the right side content like shown in Module - Quiz Screenshot
+4. When clicked on Assignment show the right side content like shown in Module - Assignment Screenshot
+
+Instructor Page:
+There is not functionality here. This page is just to be added on route
+
+Feel free to revert back to me in case of any doubts. 
+
+You need to submit the project by 24th Mar 2022, by 1:00 PM.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
