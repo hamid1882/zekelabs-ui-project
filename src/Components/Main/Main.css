@@ -1,0 +1,13 @@
+.programme-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.details-bg {
+  background-color: #f2f6ff;
+}
+
+.tabs-shadow {
+  box-shadow: 3px -3px 5px -2px rgb(35, 73, 95);
+}

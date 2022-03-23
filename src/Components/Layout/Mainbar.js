@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Layout.css";
 
 const Mainbar = () => {
-  const [showProgrammes, setShowProgrammes] = useState(false);
+  const [showProgrammes, setShowProgrammes] = useState(true);
   const [selectedProgram, setSelectedProgram] = useState("Select Program");
 
   const toggleSelectBar = () => {

@@ -35,8 +35,8 @@
 }
 .sidebar-container {
   width: 5em;
-  height: calc(100vh - 131px);
-  z-index: 2;
+  height: calc(100vh - 130px);
+  z-index: 0;
 }
 
 .toggle-container {
