@@ -44,7 +44,7 @@ const HomeData = () => {
                 </p>
               </div>
             </div>
-            <button className="btn border border-primary  rounded-pill w-50 shadow-none">
+            <button className="btn border-blue  rounded-pill w-50 shadow-none">
               View Exam Details
             </button>
           </div>
@@ -139,11 +139,11 @@ const HomeData = () => {
           <div className="bg-light rounded shadow-blue p-3 col-3">
             <h5>Progress Overview</h5>
             <div className="d-grid gap-2 my-3">
-              <div className="border border-primary py-3 px-4 d-flex justify-content-between align-items-center rounded">
+              <div className="border-blue py-3 px-4 d-flex justify-content-between align-items-center rounded">
                 <h5>0%</h5>
                 <div className="text-secondary">Overall Grade</div>
               </div>
-              <div className="border border-primary py-3 px-4 d-flex justify-content-between align-items-center rounded">
+              <div className="border-blue py-3 px-4 d-flex justify-content-between align-items-center rounded">
                 <h5>0%</h5>
                 <div className="text-secondary">Overall Grade</div>
               </div>

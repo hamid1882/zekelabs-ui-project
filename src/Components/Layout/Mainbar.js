@@ -14,10 +14,10 @@ const Mainbar = () => {
   };
 
   return (
-    <div className="dark-bg text-light w-100 py-3 ">
+    <div className="dark-bg mainbar-top text-light w-100 py-3">
       <div className="d-flex gap-4 dark-bg mainbar-top px-5">
         <div
-          className="d-flex align-items-center text-light gap-2 mainbar-top dark-bg"
+          className="d-flex align-items-center text-light gap-2 dark-bg"
           onClick={toggleSelectBar}
         >
           <div>{selectedProgram}</div>
@@ -27,7 +27,7 @@ const Mainbar = () => {
             } `}
           ></i>
         </div>
-        <h4 className="text-light mainbar-top dark-bg">{selectedProgram}</h4>
+        <h4 className="text-light dark-bg">{selectedProgram}</h4>
       </div>
       <div
         className={`w-100 dark-bg toggle-container px-5 py-3 ${

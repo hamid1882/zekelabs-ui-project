@@ -52,6 +52,10 @@ body {
   background-color: #dfe6f2;
 }
 
+.border-blue {
+  border: 1px solid #517a8d;
+}
+
 .quickChat {
   align-items: center;
   background: blue;
