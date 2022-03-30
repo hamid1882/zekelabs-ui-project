@@ -13,6 +13,26 @@ const Mainbar = () => {
     setSelectedProgram(val);
   };
 
+  const renderBatchCode = () => {
+    const currentDate = new Date();
+
+    const [month, day, year] = [
+      currentDate.getMonth(),
+      currentDate.getDate(),
+      currentDate.getFullYear(),
+    ];
+
+    const splitTheName = selectedProgram.split(" ");
+
+    const firstLetters = splitTheName.map((i, idx) => i[0]).join("");
+
+    const currentDateLeters = Number([day, month, year].join(""));
+
+    const batchCode = [firstLetters, currentDateLeters];
+
+    return batchCode.join("");
+  };
+
   return (
     <div className="dark-bg mainbar-top text-light w-100 py-3">
       <div className="d-flex gap-4 dark-bg mainbar-top px-5">
@@ -20,7 +40,7 @@ const Mainbar = () => {
           className="d-flex align-items-center text-light gap-2 dark-bg"
           onClick={toggleSelectBar}
         >
-          <div>{selectedProgram}</div>
+          <div>{renderBatchCode()}m</div>
           <i
             className={` ${
               showProgrammes ? "fa fa-chevron-down" : "fa fa-chevron-up"
@@ -37,35 +57,43 @@ const Mainbar = () => {
         <p>Select Program</p>
         <button
           className={`btn text-light shadow-none py-0 ${
-            selectedProgram === "ECRD" ? "btn-light text-dark" : "none"
+            selectedProgram === "Data Scientist Engineer"
+              ? "btn-light text-dark"
+              : "none"
           }`}
           onClick={(e) => handleSelectedBtn(e.target.innerText)}
         >
-          ECRD
+          Data Scientist Engineer
         </button>
         <button
           className={`btn text-light shadow-none py-0 ${
-            selectedProgram === "FASDFKJFKFE" ? "btn-light text-dark" : "none"
+            selectedProgram === "Python Fundamentals"
+              ? "btn-light text-dark"
+              : "none"
           }`}
           onClick={(e) => handleSelectedBtn(e.target.innerText)}
         >
-          FASDFKJFKFE
+          Python Fundamentals
         </button>
         <button
           className={`btn text-light shadow-none py-0 ${
-            selectedProgram === "DSWEREREF" ? "btn-light text-dark" : "none"
+            selectedProgram === "React Developer"
+              ? "btn-light text-dark"
+              : "none"
           }`}
           onClick={(e) => handleSelectedBtn(e.target.innerText)}
         >
-          DSWEREREF
+          React Developer
         </button>
         <button
           className={`btn text-light shadow-none py-0 ${
-            selectedProgram === "DSDDFEFEEFEF" ? "btn-light text-dark" : "none"
+            selectedProgram === "Data Structures"
+              ? "btn-light text-dark"
+              : "none"
           }`}
           onClick={(e) => handleSelectedBtn(e.target.innerText)}
         >
-          DSDDFEFEEFEF
+          Data Structures
         </button>
       </div>
     </div>
