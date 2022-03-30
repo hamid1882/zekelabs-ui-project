@@ -95,6 +95,16 @@ const Mainbar = () => {
         >
           Data Structures
         </button>
+        <button
+          className={`btn text-light shadow-none py-0 ${
+            selectedProgram === "MERN Stack Developer"
+              ? "btn-light text-dark"
+              : "none"
+          }`}
+          onClick={(e) => handleSelectedBtn(e.target.innerText)}
+        >
+          MERN Stack Developer
+        </button>
       </div>
     </div>
   );
